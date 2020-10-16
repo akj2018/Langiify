@@ -1,0 +1,35 @@
+.match-card {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  // min-height: 200px;
+
+  max-height: 100%;
+  width: 100%;
+  background: white;
+  border-radius: 4px;
+  padding: 0.5rem;
+  margin-bottom: 0.75rem;
+
+  display: flex;
+  align-items: center;
+  h4 {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 16px;
+    flex-basis: 72%;
+  }
+
+  .send-icon {
+    cursor: pointer;
+    flex-basis: 14%;
+  }
+
+  .comments-icon {
+    cursor: pointer;
+    flex-basis: 14%;
+  }
+}
+
+body {
+  background: #eef2f7;
+}

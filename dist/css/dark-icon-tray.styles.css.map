@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,eAAe,CAAC;EACd,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,WAAW,EAAE,MAAM;EACnB,eAAe,EAAE,MAAM;EACvB,UAAU,EAAE,IAAI;EAChB,aAAa,EAAE,IAAI;CAMpB;;AAZD,AAQE,eARa,CAQb,GAAG,CAAC;EACF,UAAU,EAAE,MAAM;EAClB,aAAa,EAAE,MAAM;CACtB",
+    "sources": [
+        "../../src/components/dark-icon-tray/dark-icon-tray.styles.scss"
+    ],
+    "names": [],
+    "file": "dark-icon-tray.styles.css"
+}

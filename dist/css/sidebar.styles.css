@@ -1,0 +1,49 @@
+.sidebar {
+  position: absolute;
+  width: 5vw;
+  height: 100vh;
+  left: 1px;
+  top: 0px;
+  -webkit-box-shadow: 13px -30px 48px -32px rgba(0, 0, 0, 0.75);
+          box-shadow: 13px -30px 48px -32px rgba(0, 0, 0, 0.75);
+  -webkit-transition: width 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: width 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #ffffff;
+}
+
+.sidebar .logo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 58px;
+  border: 1px solid #f5f4f4;
+  color: #ffffff;
+}
+
+.sidebar .user-profile-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+/*# sourceMappingURL=sidebar.styles.css.map */

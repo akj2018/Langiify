@@ -1,0 +1,79 @@
+.header {
+  position: fixed;
+  max-width: 95vw;
+  height: 58px;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  margin-left: 4rem;
+  z-index: 100;
+
+  display: flex;
+  align-items: center;
+
+  transition: margin-left 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+  background: #ffffff;
+  box-shadow: 4px 0px 20px rgba(0, 0, 0, 0.1);
+
+  .search-field-container {
+    display: flex;
+    flex-grow: 3;
+    padding-left: 2rem;
+    align-items: center;
+
+    h2 {
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 19px;
+      text-align: center;
+      letter-spacing: -0.333333px;
+
+      color: #9b9b9b;
+
+      margin-left: 1rem;
+    }
+  }
+
+  .navigation-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    button {
+      cursor: pointer;
+      background: none;
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 19px;
+      text-align: center;
+      letter-spacing: -0.333333px;
+      color: #9b9b9b;
+      border: none;
+
+      span {
+        margin-left: 0.5rem;
+      }
+    }
+
+    .notification-container {
+      padding-top: 0.25rem;
+    }
+
+    h3 {
+      font-family: "Lato", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 19px;
+      text-align: center;
+      letter-spacing: -0.333333px;
+      color: #cf0707;
+    }
+  }
+}

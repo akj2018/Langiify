@@ -1,0 +1,90 @@
+.header {
+  position: absolute;
+  width: 95vw;
+  height: 58px;
+  top: 0px;
+  right: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #ffffff;
+  -webkit-box-shadow: 4px 0px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 4px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.header .search-field-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
+  padding-left: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .search-field-container h2 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: -0.333333px;
+  color: #9b9b9b;
+  margin-left: 1rem;
+}
+
+.header .navigation-container {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .navigation-container button {
+  cursor: pointer;
+  background: none;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: -0.333333px;
+  color: #9b9b9b;
+  border: none;
+}
+
+.header .navigation-container button span {
+  margin-left: 0.5rem;
+}
+
+.header .navigation-container .notification-container {
+  padding-top: 0.25rem;
+}
+
+.header .navigation-container h3 {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: -0.333333px;
+  color: #cf0707;
+}
+/*# sourceMappingURL=header.styles.css.map */

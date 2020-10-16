@@ -1,0 +1,29 @@
+.dark-icon-tray {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  .sidebar-item {
+    width: 65px;
+    text-decoration: none;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    white-space: nowrap;
+
+    color: #999999;
+
+    svg {
+      margin: 0.5rem 2rem 0.5rem 1rem;
+    }
+
+    .icon-title {
+      display: inline;
+    }
+  }
+}
