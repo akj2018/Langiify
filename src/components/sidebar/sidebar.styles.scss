@@ -1,8 +1,8 @@
 .sidebar {
   position: absolute;
   width: 65px;
-  height: 150vh;
-  left: 1px;
+  height: 152vh;
+  left: 0px;
   top: 0px;
   box-shadow: 13px -30px 48px -32px rgba(0, 0, 0, 0.75);
   transition: width 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -12,8 +12,12 @@
 
   background-color: #ffffff;
 
-  // overflow-x: hidden;
-  // z-index: 1;
+  overflow-x: hidden;
+  z-index: 100;
+
+  &:hover {
+    overflow: visible;
+  }
 
   .logo-container {
     display: flex;
@@ -23,13 +27,44 @@
 
     border: 1px solid #f5f4f4;
     color: #ffffff;
+
+    .logo-2 {
+      // display: none;
+    }
   }
 
   .user-profile-container {
+    transition: width 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
     display: flex;
     align-items: center;
-    justify-content: center;
+    min-width: 65px;
+    overflow: hidden;
     margin-top: 1.5rem;
     margin-bottom: 0.75rem;
+
+    svg {
+      min-width: 65px;
+    }
+
+    .user-profile-info {
+      transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: normal;
+      h3 {
+        font-size: 15.5px;
+        line-height: 14px;
+        color: #252020;
+      }
+
+      h4 {
+        padding-top: 0.25rem;
+        font-weight: lighter;
+        font-size: 13px;
+        line-height: 14px;
+        color: #aeaeae;
+      }
+    }
   }
 }
