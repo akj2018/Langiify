@@ -8,7 +8,7 @@ import { ReactComponent as veteranModeLogo } from "../../assets/veteran-mode.svg
 const DarkIconPack = [
   {
     title: "Dashboard",
-    path: "/",
+    path: "/dashboard",
     icon: dashboardLogo,
     classname: "dark",
     id: 1,

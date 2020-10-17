@@ -45,14 +45,16 @@ const HomePage = () => {
             <h3 className="homepage-btn-2-subtitle">KEEP IMPROVING !</h3>
           </div>
           <div className="circular-progressbar-container">
-            <ChangingProgressProvider values={[0, 20, 40, 60, 80, 100]}>
+            <ChangingProgressProvider
+              values={[0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100]}
+            >
               {(percentage) => (
                 <CircularProgressbar
                   value={percentage}
                   styles={buildStyles({
                     minValue: 60,
                     maxValue: 90,
-                    pathTransitionDuration: 0.15,
+                    pathTransitionDuration: 0.01,
                     textColor: "red",
                     pathColor: "rgba(0, 153, 255, 1)",
                     trailColor: "white",

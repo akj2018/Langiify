@@ -13,7 +13,7 @@ function App() {
       <Header />
       <Sidebar />
       <Switch>
-        <Route path="/" component={HomePage} />
+        <Route path="/dashboard" component={HomePage} />
       </Switch>
     </div>
   );

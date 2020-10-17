@@ -18,6 +18,19 @@
       border-collapse: collapse;
       border-spacing: 0;
 
+      &:hover,
+      &.selected {
+        svg {
+          path {
+            fill: #0099ff;
+          }
+        }
+
+        .icon-title {
+          color: #0099ff !important;
+        }
+      }
+
       .icon-title {
         // visibility: hidden;
         transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
