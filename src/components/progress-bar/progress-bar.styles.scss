@@ -1,43 +1,101 @@
-.progress-bar {
-  margin: 2rem;
+:root {
+  --bar-height: 12px;
+
+  --progress: 20;
+  --progress-percentage: 30%;
+  --clip-progress: calc((141.5% / 100) * var(--progress));
+
+  --border-radius: calc(var(--bar-height) / 2);
+
+  --indicator-width: 0px;
+  --indicator-offset: calc(var(--indicator-width) / 2);
+  --indicator-left: calc(var(--progress-percentage) - var(--indicator-offset));
+
+  --pointer-offset: calc(var(--pointer-width) / 2);
+  --pointer-left: calc(var(--progress-percentage) - var(--pointer-offset));
+}
+
+.custom-progress-bar {
+  margin: 2rem auto;
   margin-top: 1.5rem;
   margin-bottom: 6rem;
+  width: 90%;
+  background: #fff;
+  border-radius: var(--border-radius);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05), 0px 6px 6px rgba(0, 0, 0, 0.1),
+    0px 8px 8px rgba(0, 0, 0, 0.05), 0px 10px 15px rgba(0, 0, 0, 0.03),
+    0px 30px 30px rgba(0, 0, 0, 0.15), 0px 70px 60px rgba(0, 0, 0, 0.15);
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-flow: column nowrap;
+  justify-content: center;
 
-  .progress-item {
+  .custom-meter {
+    width: 100%;
+    height: var(--bar-height);
+    background-color: rgb(236, 234, 234);
+    border-radius: var(--border-radius);
     position: relative;
+  }
+
+  .custom-bar {
+    background-color: rgba(0, 153, 255, 1);
+    width: 100%;
+    height: 95%;
+    border-radius: var(--border-radius);
+    position: absolute;
+    clip-path: circle(var(--clip-progress) at left);
+    animation: fill 2s ease-in-out 0s 1 normal;
+  }
+
+  .custom-indicator {
+    position: absolute;
+    background-color: rgba(0, 153, 255, 1);
+    width: var(--indicator-width);
+    height: var(--indicator-width);
+    top: calc(var(--bar-height) + 35px);
+    left: var(--indicator-left);
+    text-align: center;
+    animation: load-indicator 2s ease-in-out 0s 1 normal;
+    color: white;
+    border-radius: 50%;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 31px;
+  }
 
-    .progress-value {
-      display: none;
-      position: absolute;
-      transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  .custom-pointer {
+    background-color: rgba(0, 153, 255, 1);
+    width: var(--indicator-width);
+    height: var(--indicator-width);
+    border-radius: none;
+    // transform: rotate(-135deg);
+    position: absolute;
+    top: calc(var(--bar-height) + 4px);
+    left: var(--pointer-left);
+    animation: load-pointer 2s ease-in-out 0s 1 normal;
+    clip-path: polygon(50% 5%, 0% 100%, 100% 100%);
+  }
+
+  @keyframes load-indicator {
+    from {
+      left: calc(0% - var(--indicator-offset));
     }
+  }
 
-    .progress-line {
-      margin-left: 0.2rem;
-      margin-right: 0.2rem;
-      cursor: pointer;
-
-      transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  @keyframes load-pointer {
+    from {
+      left: calc(0% - var(--pointer-offset));
     }
+  }
 
-    &:hover {
-      .progress-line {
-        transform: scaleY(3);
-      }
-      .progress-value {
-        margin-top: 3.5rem;
-        display: block;
-        transform: scale(2.75);
-        font-family: "Lato";
-        font-style: normal;
-        font-weight: bold;
-        // font-size: 48px;
-      }
+  @keyframes fill {
+    from {
+      clip-path: circle(0% at left);
     }
   }
 }

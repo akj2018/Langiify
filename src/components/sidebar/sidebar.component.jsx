@@ -2,7 +2,6 @@ import React from "react";
 
 import "./sidebar.styles.scss";
 
-import { ReactComponent as LanguifyLogo2 } from "../../assets/languify-LOGO-2.svg";
 import { ReactComponent as LanguifyLogo1 } from "../../assets/languify-LOGO.svg";
 import { ReactComponent as UserProfileLogo } from "../../assets/profile-icon.svg";
 import DarkIconTray from "../dark-icon-tray/dark-icon-tray.components";
