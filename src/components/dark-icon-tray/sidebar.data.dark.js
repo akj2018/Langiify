@@ -22,7 +22,7 @@ const DarkIconPack = [
   },
   {
     title: "Solo Mode",
-    path: "/",
+    path: "/solo-mode",
     icon: soloModeLogo,
     classname: "dark",
     id: 3,

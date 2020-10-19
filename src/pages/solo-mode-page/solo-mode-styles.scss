@@ -1,0 +1,30 @@
+.solo-mode-page {
+  padding: 1rem;
+  background-color: #f4f3f3;
+  margin: 4rem 1rem 1rem 5rem;
+  display: grid;
+  max-width: 95vw;
+
+  transition: margin-left 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+  .main-card {
+    height: 135vh;
+    padding: 3rem;
+
+    h4 {
+      margin-bottom: 1.5rem;
+    }
+
+    .carousel {
+      max-height: 350px;
+      border-radius: 10px;
+      margin-bottom: 1.25rem;
+      .slider-wrapper {
+        max-height: 350px !important;
+        .slider {
+          max-height: 350px;
+        }
+      }
+    }
+  }
+}

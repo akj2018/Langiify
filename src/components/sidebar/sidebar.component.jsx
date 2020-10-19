@@ -20,7 +20,8 @@ const Sidebar = (props) => {
         x[i].style.width = "190px";
         y[i].style.opacity = "1";
       }
-      document.getElementById("homepage").style.marginLeft = "12rem";
+      // document.getElementById("homepage").style.marginLeft = "12rem";
+      document.getElementById("solo-mode-page").style.marginLeft = "12rem";
       document.getElementById("header").style.marginLeft = "11rem";
       document.querySelector(".user-profile-info").style.opacity = "1";
 
@@ -34,13 +35,16 @@ const Sidebar = (props) => {
         x[i].style.width = "65px";
         y[i].style.opacity = "0";
       }
-      document.getElementById("homepage").style.marginLeft = "5rem";
+      // document.getElementById("homepage").style.marginLeft = "5rem";
+      document.getElementById("solo-mode-page").style.marginLeft = "5rem";
       document.getElementById("header").style.marginLeft = "4rem";
       document.querySelector(".user-profile-info").style.opacity = "0";
 
       mini = true;
     }
   };
+
+  console.log(props);
 
   return (
     <div
