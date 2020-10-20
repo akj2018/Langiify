@@ -1,7 +1,7 @@
 import React from "react";
 // import { render } from "react-dom";
 
-import "./homepage.styles.scss";
+import "./dashboard.styles.scss";
 import { Link } from "react-router-dom";
 
 import { ReactComponent as PlayButton } from "../../assets/playButton.svg";

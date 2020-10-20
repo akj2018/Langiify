@@ -1,16 +1,19 @@
 import React from "react";
 
-import "./solo-mode-styles.scss";
+import "./dual-mode-styles.scss";
 
 import Card from "../../components/card/card.component";
 import styles from "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import CardSlider from "../../components/card-slider/card-slider.component";
+import CheckboxList from "../../components/conversation-list-item/conversation-list-item.component";
 
-class SoloModePage extends React.Component {
+class DualModePage extends React.Component {
+  componentDidMount() {}
+
   render() {
     return (
-      <div className="solo-mode-page" id="solo-mode-page">
+      <div className="dual-mode-page" id="dual-mode-page">
         <Card className="main-card">
           <h4>See What's New</h4>
           <Carousel
@@ -65,10 +68,12 @@ class SoloModePage extends React.Component {
           </Carousel>
           <h4>Previous Work</h4>
           <CardSlider />
+          <h4>Previous Conversations</h4>
+          <CheckboxList></CheckboxList>
         </Card>
       </div>
     );
   }
 }
 
-export default SoloModePage;
+export default DualModePage;

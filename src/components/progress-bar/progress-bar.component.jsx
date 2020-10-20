@@ -3,7 +3,7 @@ import React from "react";
 import "./progress-bar.styles.scss";
 
 const ProgressBar = (props) => {
-  const value = 40;
+  const value = 75;
   // const minValue = 0;
   const maxValue = 100;
 

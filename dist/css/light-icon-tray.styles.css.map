@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,gBAAgB,CAAC;EACf,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,WAAW,EAAE,MAAM;EACnB,eAAe,EAAE,MAAM;EACvB,UAAU,EAAE,IAAI;EAChB,aAAa,EAAE,IAAI;CAMpB;;AAZD,AAQE,gBARc,CAQd,GAAG,CAAC;EACF,UAAU,EAAE,MAAM;EAClB,aAAa,EAAE,MAAM;CACtB",
-    "sources": [
-        "../../src/components/light-icon-tray/light-icon-tray.styles.scss"
-    ],
-    "names": [],
-    "file": "light-icon-tray.styles.css"
-}

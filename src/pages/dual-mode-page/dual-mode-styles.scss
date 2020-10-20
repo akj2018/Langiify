@@ -1,4 +1,4 @@
-.solo-mode-page {
+.dual-mode-page {
   padding: 1rem;
   background-color: #f4f3f3;
   margin: 4rem 1rem 1rem 5rem;
@@ -9,22 +9,28 @@
 
   .main-card {
     min-height: 135vh;
-    padding: 3rem;
+    padding: 1.75rem;
 
     h4 {
-      margin-bottom: 1.5rem;
+      margin-bottom: 1.25rem;
     }
 
     .carousel {
       max-height: 350px;
       border-radius: 10px;
-      margin-bottom: 1.25rem;
+      margin-bottom: 2.5rem;
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+        0 10px 10px rgba(0, 0, 0, 0.22);
       .slider-wrapper {
         max-height: 350px !important;
         .slider {
           max-height: 350px;
         }
       }
+    }
+
+    .slick-slider {
+      margin-bottom: 2.5rem;
     }
   }
 }

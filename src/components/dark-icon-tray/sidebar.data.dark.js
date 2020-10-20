@@ -29,7 +29,7 @@ const DarkIconPack = [
   },
   {
     title: "Dual Mode",
-    path: "/",
+    path: "/dual-mode",
     icon: dualModeLogo,
     classname: "dark",
     id: 4,
